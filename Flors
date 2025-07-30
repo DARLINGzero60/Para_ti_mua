@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para ti, con cariño 💖</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to top right, #ffd6ec, #ffecf2);
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      color: #d5007d;
+      font-size: 2.8em;
+      text-shadow: 2px 2px 5px #fff;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      text-align: center;
+      margin: 20px auto;
+      max-width: 600px;
+      font-size: 1.3em;
+      color: #6a006a;
+      background-color: rgba(255,255,255,0.6);
+      padding: 15px;
+      border-radius: 10px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .flores {
+      position: fixed;
+      width: 40px;
+      height: 40px;
+      background-image: url('img/flor.png'); /* 💡 Usa tu propia imagen */
+      background-size: cover;
+      animation: flotar 12s infinite linear;
+      opacity: 0.7;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes flotar {
+      0% { transform: translateY(-100px); left: 0%; }
+      50% { left: 50%; }
+      100% { transform: translateY(100vh); left: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Feliz Día de la Amistad 💕</h1>
+  <p>Gracias por compartir tu luz conmigo. Tu presencia transforma cada día en algo especial. ¡Esto es para ti, con cariño!</p>
+
+  <!-- 🌸 Flores flotando -->
+  <div class="flores" style="top: -40px; left: 10%;"></div>
+  <div class="flores" style="top: -60px; left: 30%; animation-delay: 2s;"></div>
+  <div class="flores" style="top: -80px; left: 50%; animation-delay: 4s;"></div>
+  <div class="flores" style="top: -100px; left: 70%; animation-delay: 6s;"></div>
+  <div class="flores" style="top: -120px; left: 90%; animation-delay: 8s;"></div>
+
+</body>
+</html>
